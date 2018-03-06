@@ -3,6 +3,7 @@
 ## Installation
 
 Download and extract the Project. Rename it to skiManagement and move it into htdocs.
+<br>
 Install composer and run.
 ```composer install```
 
@@ -10,21 +11,6 @@ Install composer and run.
 
 Linux
 ```/opt/lampp/etc/extra/httpd-vhosts.conf```
-
-```bash
-<VirtualHost *:80>
-    ServerName skiManagement.localhost
-    DocumentRoot C:\xampp\htdocs\skiManagement\app\public
-    SetEnv APPLICATION_ENV "development"
-    <Directory C:\xampp\htdocs\skiManagement\app\public>
-            DirectoryIndex index.php
-            AllowOverride All
-            Require all granted
-    </Directory>
-</VirtualHost>
-```
-Windows
-```C:\xampp\apache\conf\extra\httpd-vhosts.conf```
 
 ```bash
 <VirtualHost *:80>
@@ -39,6 +25,21 @@ Windows
 </VirtualHost>
 ```
 
+Windows
+```C:\xampp\apache\conf\extra\httpd-vhosts.conf```
+
+```bash
+<VirtualHost *:80>
+    ServerName skiManagement.localhost
+    DocumentRoot C:\xampp\htdocs\skiManagement\app\public
+    SetEnv APPLICATION_ENV "development"
+    <Directory C:\xampp\htdocs\skiManagement\app\public>
+            DirectoryIndex index.php
+            AllowOverride All
+            Require all granted
+    </Directory>
+</VirtualHost>
+```
 Linux<br>
 ```/etc/hosts```
 
