@@ -14,14 +14,14 @@ Linux
 
 ```bash
 <VirtualHost *:80>
-    ServerName skiManagement.localhost
-    DocumentRoot /opt/lampp/htdocs/skiManagement/app/public
-    SetEnv APPLICATION_ENV "development"
-    <Directory /opt/lampp/htdocs/skiManagement/app/public>
-            DirectoryIndex index.php
-            AllowOverride All
-            Require all granted
-    </Directory>
+     ServerName skiManagement.localhost
+     DocumentRoot /srv/http/skiManagement/public
+     SetEnv APPLICATION_ENV "development"
+     <Directory /srv/http/skiManagement/public>
+         DirectoryIndex index.php
+         AllowOverride All
+         Require all granted
+     </Directory>
 </VirtualHost>
 ```
 
@@ -30,14 +30,14 @@ Windows
 
 ```bash
 <VirtualHost *:80>
-    ServerName skiManagement.localhost
-    DocumentRoot C:\xampp\htdocs\skiManagement\app\public
-    SetEnv APPLICATION_ENV "development"
-    <Directory C:\xampp\htdocs\skiManagement\app\public>
-            DirectoryIndex index.php
-            AllowOverride All
-            Require all granted
-    </Directory>
+     ServerName skiManagement.localhost
+     DocumentRoot C:\xampp\htdocs\skiManagement\public
+     SetEnv APPLICATION_ENV "development"
+     <Directory C:\xampp\htdocs\skiManagement\public>
+         DirectoryIndex index.php
+         AllowOverride All
+         Require all granted
+     </Directory>
 </VirtualHost>
 ```
 Linux<br>
