@@ -20,9 +20,9 @@ return [
                 'driverClass' => PDOMySqlDriver::class,
                 'params' => [
                     'host'     => '127.0.0.1',                    
-                    'user'     => 'userdemo',
-                    'password' => '<password>',
-                    'dbname'   => 'userdemo',
+                    'user'     => 'root',
+                    'password' => '',
+                    'dbname'   => 'skiManagement',
                 ]
             ],            
         ],        
