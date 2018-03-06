@@ -1,0 +1,16 @@
+<?php
+$this->headTitle('Leaderboards');
+
+$this->mainMenu()->setActiveItemId('leaderboard');
+
+$this->pageBreadcrumbs()->setItems([
+            'Home'=>$this->url('home'),
+            'About'=>$this->url('about'),
+            ]);
+?>
+
+<h1>Leaderboards</h1>
+
+<p>
+    <?= $this->escapeHtml($appName) ?> was created to simplify the process of managing Winter Events in local schools.
+</p>
