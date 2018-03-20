@@ -49,6 +49,9 @@ Windows<br>
 ```127.0.0.1    skiManagement.localhost    localhost```
 
 
+### php.ini
+You need to go to ```C:\xampp\php\php.ini``` and uncomment the following line. ```extension=php_intl.dll```. You can uncomment it by removing the ";"
+
 ### Install with Composer
 
 To be able to run this project, you need to install [Composer](https://getcomposer.org/). On Windows you also need to set the [COMPOSER_HOME Environment variable](https://stackoverflow.com/questions/25549177/change-composer-global-path-windows).<br>
