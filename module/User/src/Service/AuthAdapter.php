@@ -83,6 +83,12 @@ class AuthAdapter implements AdapterInterface
                 ['User is retired.']);        
         }
         
+        // Check if user has a special role
+        //TODO: Create function in UserManager to check that id
+        /*if () {
+            
+        }*/
+        
         // Now we need to calculate hash based on user-entered password and compare
         // it with the password hash stored in database.
         $bcrypt = new Bcrypt();

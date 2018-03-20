@@ -91,10 +91,10 @@ class UserManager
         if ($user==null) {
             $user = new User();
             $user->setEmail('admin@example.com');
-            $user->setName('Eric');
-            $user->setSurname('Studer');
+            $user->setName('admin');
+            $user->setSurname('user');
             $bcrypt = new Bcrypt();
-            $passwordHash = $bcrypt->create('Secur1ty');        
+            $passwordHash = $bcrypt->create('Bfo12345');        
             $user->setPassword($passwordHash);
             $user->setStatus(User::STATUS_ACTIVE);
             $user->setDateCreated(date('Y-m-d H:i:s'));
@@ -242,6 +242,14 @@ class UserManager
         $this->entityManager->flush();
 
         return true;
+    }
+    
+    /**
+     * Check Role of user
+     */
+    public function checkRole($user){
+         $user = $this->entityManager->getRepository(User::class)
+                ->findOneBy($passwordResetToken);//TODO: Fix and get from proper repo
     }
 }
 

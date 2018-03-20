@@ -5,9 +5,8 @@ $this->mainMenu()->setActiveItemId('users');
 
 $this->pageBreadcrumbs()->setItems([
             'Home'=>$this->url('home'),
-            //'View Profile'=>$this->url('users', ['action'=>'view', 'id'=>$user->getId()])
-            //'View Profile'=>$this->url('users', ['action'=>'view', 'id'=>$user->getId()])
-            'View Profile'=>$this->url('users')
+            'Manage Users'=>$this->url('users'),
+            'View User'=>$this->url('users', ['action'=>'view', 'id'=>$user->getId()])
             ]);
 ?>
 

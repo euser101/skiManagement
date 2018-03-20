@@ -29,4 +29,6 @@ return [
     'Zend\Validator',    
     'Application',
     'User'
+    /*'User',
+    'Admin'*/
 ];

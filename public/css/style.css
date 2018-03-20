@@ -63,3 +63,13 @@ a:link { text-decoration: none; }
 .app-caption:hover { filter: brightness(110%); }
 
 .btn-main, .inline-element { margin-top: 10px; }
+
+.center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}

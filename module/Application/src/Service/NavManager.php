@@ -64,8 +64,8 @@ class NavManager
                 'float' => 'right'
             ];
         } else {
-            
-            $items[] = [
+            //TODO: Check for admin and display corresponding info
+            /*$items[] = [
                 'id' => 'admin',
                 'label' => 'Admin',
                 'dropdown' => [
@@ -75,7 +75,7 @@ class NavManager
                         'link' => $url('users')
                     ]
                 ]
-            ];
+            ];*/
             
             $items[] = [
                 'id' => 'logout',
@@ -84,7 +84,7 @@ class NavManager
                 'dropdown' => [
                     [
                         'id' => 'settings',
-                        'label' => 'Settings',
+                        'label' => 'Profile',
                         'link' => $url('application', ['action'=>'settings'])
                     ],
                     [

@@ -12,7 +12,7 @@ use User\Form\PasswordResetForm;
  * This controller is responsible for user management (adding, editing, 
  * viewing users and changing user's password).
  */
-class UserController extends AbstractActionController 
+class UserController extends UserController 
 {
     /**
      * Entity manager.
@@ -41,15 +41,11 @@ class UserController extends AbstractActionController
      */
     public function indexAction() 
     {
-        /*$users = $this->entityManager->getRepository(User::class)
+        $users = $this->entityManager->getRepository(User::class)
                 ->findBy([], ['id'=>'ASC']);
         
         return new ViewModel([
             'users' => $users
-        ]);*/
-        
-        return new ViewModel([
-            'users' => "View your profile"
         ]);
     } 
     
